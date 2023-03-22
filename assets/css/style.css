@@ -91,6 +91,10 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
+.img-php{
+  width: 80px;
+  height: 70px;
+}
 
 @media (max-width: 1024px) {
   .bg-image {
