@@ -2,7 +2,7 @@
 
 // Cette fonction est appelée lorsque l'icône "bi bi-plus-circle" est cliquée
 function showPortfolioDetails(itemId) {
-    var portfolioDetailsContainer = document.getElementById("portfolio-details");
+    var portfolioDetailsContainer = document.getElementById("portfolio-info");
 
     // Ici, vous pouvez charger dynamiquement les détails du portefeuille en fonction de l'itemId
     // Vous pouvez utiliser un objet, un tableau ou une autre source de données pour obtenir les détails appropriés
