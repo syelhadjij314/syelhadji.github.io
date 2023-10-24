@@ -3,7 +3,6 @@
 // Cette fonction est appelée lorsque l'icône "bi bi-plus-circle" est cliquée
 function showPortfolioDetails(itemId) {
     var portfolioDetailsContainer = document.getElementById("portfolio-details");
-    console.log('okkkkkkkkkkk');
     
     // Ici, vous pouvez charger dynamiquement les détails du portefeuille en fonction de l'itemId
     // Vous pouvez utiliser un objet, un tableau ou une autre source de données pour obtenir les détails appropriés
@@ -30,6 +29,8 @@ function showPortfolioDetails(itemId) {
       <p>${portfolioData.description}</p>
     `;
   }
+  console.log('okkkkkkkkkkk');
+
   
   // Obtenez tous les boutons "bi bi-plus-circle" et ajoutez un gestionnaire d'événements de clic à chacun
   var plusIcons = document.querySelectorAll(".bi.bi-plus-circle");
