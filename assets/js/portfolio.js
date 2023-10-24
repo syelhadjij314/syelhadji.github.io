@@ -3,7 +3,7 @@
 // Cette fonction est appelée lorsque l'icône "bi bi-plus-circle" est cliquée
 function showPortfolioDetails(itemId) {
     var portfolioDetailsContainer = document.getElementById("portfolio-details");
-    
+
     // Ici, vous pouvez charger dynamiquement les détails du portefeuille en fonction de l'itemId
     // Vous pouvez utiliser un objet, un tableau ou une autre source de données pour obtenir les détails appropriés
 
@@ -16,8 +16,8 @@ function showPortfolioDetails(itemId) {
         projectURL: "www.example.com",
         description: "Ceci est un exemple de détail de portefeuille pour l'élément " + itemId + ". Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius."
     };
-    
-        // Mettez à jour le contenu du conteneur avec les détails du portefeuille
+
+    // Mettez à jour le contenu du conteneur avec les détails du portefeuille
     portfolioDetailsContainer.innerHTML = `
     <h3>${portfolioData.title}</h3>
     <ul>
@@ -28,22 +28,20 @@ function showPortfolioDetails(itemId) {
     </ul>
     <p>${portfolioData.description}</p>
     `;
+
     console.log(portfolioData);
+}
 
-    }
-    console.log('okkkkkkkkkkk');
+// Obtenez tous les boutons "bi bi-plus-circle" et ajoutez un gestionnaire d'événements de clic à chacun
+var plusIcons = document.querySelectorAll(".bi.bi-plus-circle");
 
-
-  // Obtenez tous les boutons "bi bi-plus-circle" et ajoutez un gestionnaire d'événements de clic à chacun
-    var plusIcons = document.querySelectorAll(".bi.bi-plus-circle");
-    
-    for (var i = 0; i < plusIcons.length; i++) {
-        plusIcons[i].addEventListener("click", function (event) {
+for (var i = 0; i < plusIcons.length; i++) {
+    plusIcons[i].addEventListener("click", function (event) {
         // Obtenez l'identifiant unique de l'élément de portefeuille associé
         var itemId = event.target.getAttribute("data-portfolio-id");
-    
+
         if (itemId) {
             showPortfolioDetails(parseInt(itemId));
         }
-        });
-    }
+    });
+}
