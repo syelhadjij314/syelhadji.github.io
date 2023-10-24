@@ -28,7 +28,7 @@ function showPortfolioDetails(itemId) {
     </ul>
     <p>${portfolioData.description}</p>
     `;
-    console.log(portfolioDetailsContainer);
+    console.log(portfolioData);
 
     }
     console.log('okkkkkkkkkkk');
